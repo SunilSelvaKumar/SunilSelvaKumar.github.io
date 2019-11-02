@@ -1,0 +1,119 @@
+<html>
+<title>Inputs</title>
+
+<script>
+  function Think()
+  {
+    var intrest1=document.getElementById("intrest1").value;
+    var dept=document.getElementById("department").value;
+    localStorage.setItem("Intrest",intrest1);
+    localStorage.setItem("department",dept);
+    return false;
+  }
+</script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <form  action="page2.html">
+  <h1>Carrer Guidance</h1>
+
+    <select id="department" class="department" required>
+      <option name="">Select Domain</option>
+      <optgroup label="Engineering">
+      <option id="department" value="CSE" name="CSE">Computer Science and Engineering</option>
+    </optgroup>
+    <optgroup label="Law">
+      <option id="department" value="law" name="law">LAW</option>
+    </optgroup>
+    <optgroup label="Medical">
+      <option id="department" value="MBBS" name="MBBS">Medical Science</option>
+    </optgroup>
+    <optgroup label="Arts and Science">
+      <option id="department" value="Physics" name="ARTS">Physics</option>
+      <option id="department" value="Maths" name="Maths">Mathematics</option>
+    </optgroup>
+    </select>
+    <br>
+    <input id="intrest1" type="text" placeholder="Intrest 1" class="intrest1" required/>
+    <br>
+    <input id="intrest2" type="text" placeholder="Intrest 2" class="intrest2" />
+    <br>
+    <input id="intrest3" type="text" placeholder="Intrest 3" class="intrest3" />
+    <br>
+    <button onclick="Think();">Submit</button>
+  </form>
+</body>
+<style>
+  *
+  {
+    box-sizing: border-box;
+  }
+  form{
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 10px 15px;
+    background: #f4f7f8;
+    border-radius: 15px;
+  }
+
+  h1
+  {
+    margin: 0 0 30px 0;
+    text-align: center;
+
+    color: #000;
+  }
+  input[type="text"],
+  select
+  {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    border:2px solid #999999;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    width: 100%;
+    box-shadow: 0 1px 0 rgb(0,0,0,0.3) inset;
+    margin-bottom: 30px;
+    background: url("Stock/if_user_925901.png");
+  }
+  select
+  {
+    padding: 0px;
+    height: 32px;
+    border-radius: 6px;
+  }
+  fieldset
+  {
+    margin-bottom: 30px;
+    border: none;
+  }
+  button
+  {
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+     margin-bottom: 10px;
+  }
+  body
+  {
+    color: #384047;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+  }
+  </style>
+</html>

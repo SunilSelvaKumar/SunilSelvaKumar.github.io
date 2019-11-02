@@ -1,0 +1,72 @@
+<html>
+<title>Page 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <div>
+  <textarea id="text"></textarea>
+</div>
+</body>
+<script>
+  var temp=localStorage.getItem("Intrest");
+  var dept=localStorage.getItem("department");
+  var output="law";
+  var input="Computer Programming";
+  if(dept==output && input==temp)
+  {
+    output="1. Develop apps and sites related to laws help people know about the laws and rights every citizen have.\n \n2. Develop an app which generates sections which are related to given problem or case \n\n3.Develop a platform where people raise queries to lawers and interact on issues and to know the legal steps to be taken to  solve a problem";
+  }
+  else
+  {
+    output="CSE";
+    input="Music";
+    if(dept==output && input==temp)
+    {
+      output="1.Develop apps which helps creating music and simulating instruments \n\n2. Creating effective platforms to teach music to begginers and help musicians develop their skills \n\n3. Research on making computer learn the type of music people like and make computer compose possible tunes by itself ";
+    }
+    else {
+      output="Maths";
+      input="Architecture";
+      if(dept==output && input==temp)
+      {
+        output="Creating new designs and patterns using geometry and topolgy in math.";
+      }
+    }
+  }
+  document.getElementById("text").value=output;
+</script>
+<style>
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  color: #384047;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+div{
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 10px auto;
+  background: url("Stock/if_user_925901.png");;
+  border-radius: 15px;
+
+}
+textarea
+{
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  border:2px solid #999999;
+  font-size: 16px;
+  height: 50%;
+  margin: 0;
+  outline: 0;
+  padding: 60px ;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  width: 100%;
+  box-shadow: 0 1px 0 rgb(0,0,0,0.3) inset;
+  margin-bottom: 30px;
+  background: url("Stock/if_user_925901.png");
+}
+</html>
